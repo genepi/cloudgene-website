@@ -1,6 +1,6 @@
 # Site title and subtitle. This is used in _includes/header.html
 title: 'Cloudgene'
-subtitle: 'The easiest way to transform your Hadoop application in a webservice.'
+subtitle: 'The easiest way to transform your Hadoop application into a webservice.'
 
 # if you wish to integrate disqus on pages set your shortname here
 disqus_shortname: ''
