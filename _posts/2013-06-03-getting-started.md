@@ -98,6 +98,6 @@ Please have a look at the documentation, for a detailed information including th
 
 
 
- [1]: /images/hadoop.png
- [2]: /images/smtp.png
- [3]: /images/check.png
+ [1]: {{ site.baseurl }}/images/hadoop.png
+ [2]: {{ site.baseurl }}/images/smtp.png
+ [3]: {{ site.baseurl }}/images/check.png

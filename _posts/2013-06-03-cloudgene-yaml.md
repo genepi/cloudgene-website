@@ -348,6 +348,6 @@ The introduction of directives opens a wide range of new possibilities: (1) basi
 
 
 
- [1]: /images/cloudgene.png
- [2]: /images/cloudgene-2.png
- [3]: /images/cloudgene-3.png
+ [1]: {{ site.baseurl }}/images/cloudgene.png
+ [2]: {{ site.baseurl }}/images/cloudgene-2.png
+ [3]: {{ site.baseurl }}/images/cloudgene-3.png
