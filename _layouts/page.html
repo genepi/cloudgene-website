@@ -1,11 +1,143 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="page-header">
-    <h2>{{ page.title }}
-        {% if page.subtitle %}<small>{{ page.subtitle }}</small>{% endif %}
-    </h2>
-</div>
+<head>
+	<meta charset="utf-8">
+	<title>Cloudgene{% if page.title }%} - {{page.title}}{% endif %}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!-- Le styles -->
+	<link href="/assets/css/bootstrap.css" rel="stylesheet">
+	<link href="/assets/css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="/assets/css/docs.css" rel="stylesheet">
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+      </script>
+    <![endif]-->
+	<!-- Le fav and touch icons -->
+	<link rel="shortcut icon" href="assets/ico/favicon.ico">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+	<style>
 
-{{ content }}
+	</style>
+</head>
+
+<body>
+	<!--<a href="https://github.com/driftyco/jetstrap-docs"><img style="position: absolute; z-index: 10000; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>-->
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="/" class="brand"><img src="https://raw.githubusercontent.com/genepi/cloudgene/master/cloudgene.mapred/src/web/images/cloudgene.png" style="height:42px;"></a>
+				<ul class="nav pull-right">
+					<li><a href="{{ site.baseurl }}/">Home</a></li>
+					<li><a href="{{ site.baseurl }}/download">Download</a></li>
+					<li><a href="{{ site.baseurl }}/about">About Us</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="span3">
+
+
+				<ul id="menu" class="nav nav-list" data-spy="affix">
+					{% for section in site.sections %} {% assign attr = section[0] %} {% assign label = section[1] %} {% for page in site.categories[attr] %} {% if forloop.first %}
+					<li class="nav-header">{{ label }}</li>
+					{% endif %}
+					<li data-order="{{ page.order }}"><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
+					{% endfor %} {% endfor %}
+					<!-- List additional links. It is recommended to add a divider
+              e.g. <li class="divider"></li> first to break up the content. -->
+				</ul>
+
+
+
+			</div>
+			<div class="span9">
+				<div class="page-header">
+					<h1>{{page.title}}</h1>
+				</div>
+				<div id="page-content">
+					{{content}}
+					<br>
+					<br>
+					<br>
+					<p class="text-center"><small>© 2010-2016 by <a href="http://www.forer.it">Lukas Forer</a> and <a href="http://seppinho.github.io/">Sebastian Schoenherr</a>  &#8226; Clousgene is licensed under <a href="https://tldrlegal.com/license/gnu-affero-general-public-license-v3-(agpl-3.0)">AGPL-3.0</a> &#8226; Template based on <a href="https://github.com/driftyco/jetstrap-docs">jetstrap-docs</a></small></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<style>
+
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
+	</script>
+	<script src="/assets/js/bootstrap.js">
+	</script>
+
+	<script>
+		$('#menu [data-section="{{page.section}}"]').addClass('active');
+	</script>
+
+  <script>
+          function orderNav() {
+              var list,
+                  section,
+                  header,
+                  sections = [],
+                  lists = {},
+                  headers = {};
+
+              var navUl = document.querySelectorAll('#navigation ul')[0],
+                  navLis = document.querySelectorAll('#navigation ul li');
+
+              if (!navUl) return;
+
+              for (var i = 0; i < navLis.length; i++) {
+                  var order, li = navLis[i];
+
+                  if (li.classList.contains('nav-header')) {
+                      section = li.textContent || li.innerText;
+                      sections.push(section);
+                      headers[section] = li;
+                      continue;
+                  }
+
+                  if (!lists[section]) {
+                      lists[section] = [];
+                  }
+
+                  order = parseFloat(li.getAttribute('data-order'))
+                  lists[section].push([order, li]);
+              }
+
+              for (var i = 0; i < sections.length; i++) {
+                  section = sections[i];
+                  list = lists[section].sort(function(a, b) {
+                      return a[0] - b[0];
+                  });
+
+                  if (header = headers[section]) {
+                      navUl.appendChild(header);
+                  }
+                  for (var j = 0; j < list.length; j++) {
+                      navUl.appendChild(list[j][1]);
+                  }
+              }
+          }
+
+          if (document.querySelectorAll) orderNav();
+      </script>
+
+</body>
+
+</html>

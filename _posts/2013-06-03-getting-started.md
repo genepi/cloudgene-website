@@ -9,7 +9,7 @@ order: 0
 This page helps you to install, configure and running Cloudgene on your own Hadoop MapReduce cluster. Step by step tutorials about the installation of Hadoop can be found on this page.
 
 
-### Requirements
+## Requirements
 
 Cloudgene requires the following software packages in order to work properly.
 
@@ -18,7 +18,7 @@ Cloudgene requires the following software packages in order to work properly.
 *   Optional: R (packages: RMarkdown, knitr, ggplot2)
 
 
-### Download and Installation
+## Download and Installation
 
 Download the latest version from our download page:
 
@@ -37,7 +37,7 @@ Now you are ready to start and configure Cloudgene.
 
 
 
-### Running Cloudgene
+## Running Cloudgene
 
 Start Cloudgene by entering the following command:
 
@@ -56,7 +56,7 @@ Cloudgene can be stopped with the following command:
 
 
 
-### Configuration
+## Configuration
 
 1.  Open your browser and navigate to `http://localhost:8085`.
 
@@ -74,7 +74,7 @@ Cloudgene can be stopped with the following command:
 
 
 
-### Verifying your Installation
+## Verifying your Installation
 
 Cloudgene is delivered with a preconfigured application which can be used to test that Cloudgene detects your Hadoop cluster and works properly. To run this test, please follow this steps:
 
@@ -89,7 +89,7 @@ Cloudgene is delivered with a preconfigured application which can be used to tes
 4.  Now you are ready to use Cloudgene!
 
 
-### What's next?
+## What's next?
 
 Please have a look at the documentation, for a detailed information including the user guide, a list of supported applications and tutorials on how to integrate and deploy your own applications:
 

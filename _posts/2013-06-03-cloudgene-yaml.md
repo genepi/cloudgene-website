@@ -11,7 +11,7 @@ First of all, a new program folder must be created in the apps folder of Cloudge
 
 ![enter image description here][1]
 
-* * *
+
 
 ## cloudgene.yaml
 
@@ -53,7 +53,7 @@ A simple example looks like this:
         - ...
 
 
-* * *
+
 
 ### Input Parameters
 
@@ -72,7 +72,7 @@ The following table describes all properties of an input parameter in detail:
 
 *TODO*
 
-* * *
+
 
 ### Output Parameters
 
@@ -188,13 +188,13 @@ Each of these parameters is defined by an id, a textual description and a type. 
   </table>
 </div>
 
-* * *
+
 
 ## Types of Task
 
 At the moment Cloudgene supports the execution of several Hadoop technologies and the execution of executable binaries. This hybrid approach enables to build workflows by using existing software tools and by combining them with the power of MapReduce programs. In existing solutions, HDFS files must be exported manually to the local filesystem in order to use and analyze them in a non Hadoop software. Cloudgene solves this problem by supporting an automatic file staging which provides a direct way from HDFS to a command-line-program.
 
-* * *
+
 
 ### Appache Hadoop MapReduce
 
@@ -259,7 +259,7 @@ The following example shows how easy a pig script can be integrated:
                 -param output=$hdfs_output
 
 
-* * *
+
 
 ### Unix commands
 
@@ -270,7 +270,7 @@ Cloudgene supports the execution of executable binaries. Since all HDFS inputs p
         exec: diff $hdfs_output1 $hdfs_output2
 
 
-* * *
+
 
 ### Report generation using RMarkdown
 
@@ -283,13 +283,13 @@ To give the user feedback on the results of an executed workflow, it is importan
         params: $hdfs_output
 
 
-* * *
+
 
 ### Java Interface
 
 In addition to the tasks described in the previous sections, user-defined tasks can be integrated directly in Java by implementing a defined interface. This has the advantage that the program code runs in the same instance as Cloudgene instead of creating a new process for every task. Thus, no command-line wrapper has to be written because the class has direct access to all input and output parameters. Moreover, the task has much more capabilities to communicate with the workflow manager in order to transmit status updates and detailed error messages. Please read this blog post to learn more about this topic.
 
-* * *
+
 
 ## Workflows
 
@@ -325,7 +325,7 @@ Different task types can be combined into one workflow in order to profit of the
 
 Finally, a workflow has the same properties as a task, therefore existing workflows can be included into new workflows in the same way as tasks. Please read this blog post to learn more about this topic.
 
-* * *
+
 
 ## Control Patterns
 
@@ -346,7 +346,7 @@ Some analytic workflows have a dynamic behaviour - for example, skipping a step 
 
 The introduction of directives opens a wide range of new possibilities: (1) basic input validation, (2) different data flows based on the input data, and (3) easier building of workflows by combining existing Hadoop programs without code modification.
 
-* * *
+
 
  [1]: /images/cloudgene.png
  [2]: /images/cloudgene-2.png

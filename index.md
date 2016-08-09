@@ -1,8 +1,8 @@
 ---
-layout: default
-title: "Cloudgene"
+layout: page
+title: Cloudgene
 ---
 
-## Cloudgene
+Welcome to the Cloudgene documentation, tutorials, and help site! We are constantly adding content, so check back often.
 
-some introduction
+To get started, check out the links on the left.
