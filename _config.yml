@@ -2,6 +2,8 @@ markdown: kramdown
 pygments: true
 permalink: /:title
 
+baseurl: '/cloudgene-website'
+
 # Default categories (in order) to appear in the navigation
 sections: [
     ['doc', 'Documentation'],
