@@ -7,7 +7,7 @@ title: Cloudgene
 Cloudgene is a platform designed for Hadoop MapReduce. It provides a graphical user interface for the complete MapReduce workflow including data transfer, workflow execution and data export. It provides feedback at any point.
 The overall goal of Cloudgene is to build a standardized workflow execution environment for currently available and future MapReduce programs, which can all be integrated into Cloudgene.
 
-<a class="btn btn-success" href="/cloudgene-website/getting-started">Getting started</a>
+<a class="btn btn-info" href="/cloudgene-website/getting-started">Getting started</a>
 
 * * *
 
