@@ -93,8 +93,9 @@ h6, .h6 {
   text-shadow: none;
 }
 #menu li.active a {
-  background-color: #33a5c8;
-  color: #fff;
+  color: #4b4f5c;
+  font-weight: 600;
+  background-color: #fff;
 }
 
 #page-content p{
