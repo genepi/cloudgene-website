@@ -1,4 +1,6 @@
-jetstrap-docs
+cloudgene-website
 =============
 
-Jetstrap Documentation and Tutorials
+Documentation and Tutorials
+
+see http://cloudgene.uibk.ac.at
