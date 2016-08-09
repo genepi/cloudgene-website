@@ -297,6 +297,7 @@ A MapReduce workflow is a set of MapReduce jobs which should be executed in a we
 
 A simple example looks like this:
 
+```yaml
     mapred:
 
       steps:
@@ -317,7 +318,7 @@ A simple example looks like this:
       outputs:
 
         - ...
-
+```
 
 Different task types can be combined into one workflow in order to profit of the advantages of each technology. Such kind of workflow is illustrated on the example of an analysis pipeline used in Genome-wide association studies:
 
