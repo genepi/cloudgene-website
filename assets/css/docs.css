@@ -2,7 +2,7 @@
 
 body {
   padding-top: 100px;
-  line-height: 1.5;
+  line-height: 1.6;
   font-family:'Avenir Next',Avenir,'Source Sans Pro',sans-serif;
   font-size:17px;
   color:#4b4f5c;
@@ -99,7 +99,7 @@ h6, .h6 {
 
 #page-content p{
   padding-top: 0.5em;
-  line-height: 1.2;
+  line-height: 1.6;
 }
 
 #page-content li{
@@ -112,6 +112,12 @@ h6, .h6 {
 
 #page-content h3 {
   margin-top: 1.5em;
+}
+
+.btn{
+  font-family:'Avenir Next',Avenir,'Source Sans Pro',sans-serif;
+  font-size:17px;
+  padding: 10px;
 }
 
 .orange-button {
