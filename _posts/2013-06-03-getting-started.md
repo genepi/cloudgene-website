@@ -13,7 +13,7 @@ This page helps you to install, configure and running Cloudgene on your own Hado
 
 Cloudgene requires the following software packages in order to work properly:
 
-*   Apache Hadoop (MRv1 or YARN; We highly recommend <a href="https://www.cloudera.com/products/cloudera-manager.html">Cloudera Manager</a> for seting this up)
+*   Apache Hadoop (MRv1 or YARN; We highly recommend <a href="https://www.cloudera.com/products/cloudera-manager.html">Cloudera Manager</a> for setting this up)
 *   Java 1.7 (For HTSJDK, Java 8 is required for Hadoop) 
 *   jsvc
 *   Optional: R (packages: RMarkdown, knitr, ggplot2)
@@ -21,7 +21,7 @@ Cloudgene requires the following software packages in order to work properly:
 
 ## Download and Installation
 
-Download the latest version from our <a href="/cloudgene-website/about">download</a> site.
+Download the latest version from our <a href="/cloudgene-website/download">download</a> site.
 
     
 Extract the zip file and change the permissions of the executables:
