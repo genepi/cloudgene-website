@@ -12,9 +12,8 @@ The overall goal of Cloudgene is to build Software As A Service (SaaS) approache
 
 ## Who uses Cloudgene?
 
-Cloudgene lives from its applications. Therefore, we already tested available MapReduce programs in the field of Genomics such as HadoopBam, Seal, Crossbow, Cloudburst or Myrna. If you’re interested to integrate your program please let <a href="/cloudgene-website/about">us</a> know.
+Cloudgene lives from its applications. Therefore, we've already developed two SaaS approaches (see below) and tested available MapReduce programs in the field of Genomics such as HadoopBam, Seal, Crossbow, Cloudburst or Myrna. If you’re interested to integrate your program please let <a href="/cloudgene-website/about">us</a> know.
 
-Two SaaS approaches are publicly available:
 
 ### Michigan Imputation Server
 
@@ -28,6 +27,4 @@ This server provides a free genotype imputation service. You can upload GWAS gen
 
 *In cooperation with the University of Innsbruck*
 
-mtDNA-Server provides a free service for the analysis of human mitochondrial DNA data, currently focusing on reliable identification of heteroplasmy (>= 1%) and contamination. mtDNA-Server can be executed without any user login. We also provide post-processing guidelines that should be applied after each automated analysis.
-
-[http://mtdna-server.uibk.ac.at/](http://mtdna-server.uibk.ac.at/)
+mtDNA-Server provides a free service for the analysis of human mitochondrial DNA data, currently focusing on reliable identification of heteroplasmy (>= 1%) and contamination. mtDNA-Server can be executed without any user login. We also provide post-processing guidelines that should be applied after each automated analysis. [http://mtdna-server.uibk.ac.at/](http://mtdna-server.uibk.ac.at/)
