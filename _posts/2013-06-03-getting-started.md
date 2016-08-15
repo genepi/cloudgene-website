@@ -6,65 +6,61 @@ category: doc
 order: 0
 ---
 
-This page helps you to install, configure and running Cloudgene on your own Hadoop MapReduce cluster. Step by step tutorials about the installation of Hadoop can be found on this page.
+This page helps you to install, configure and running Cloudgene on your own Hadoop cluster.
 
 
 ## Requirements
 
-Cloudgene requires the following software packages in order to work properly.
+Cloudgene requires the following software packages in order to work properly:
 
-*   Apache Hadoop (MRv1, CDH4 or CDH5)
-*   Java 1.7
+*   Apache Hadoop (MRv1 or YARN; We highly recommend <a href="https://www.cloudera.com/products/cloudera-manager.html">Cloudera Manager</a> for seting this up)
+*   Java 1.7 (For HTSJDK, Java 8 is required for Hadoop) 
+*   jsvc
 *   Optional: R (packages: RMarkdown, knitr, ggplot2)
 
 
 ## Download and Installation
 
-Download the latest version from our download page:
+Download the latest version from our <a href="/cloudgene-website/about">download</a> site.
 
-    mkdir cloudgene
-    cd cloudgene
-    wget http://cloudgene.uibk.ac.at/downloads/cloudgene.latest.zip
-
-
+    
 Extract the zip file and change the permissions of the executables:
 
     unzip cloudgene.latest.zip
-    chmod +x start.sh state.sh stop.sh
+    chmod +x cloudgene
 
 
 Now you are ready to start and configure Cloudgene.
-
 
 
 ## Running Cloudgene
 
 Start Cloudgene by entering the following command:
 
-    ./start.sh
+    ./cloudgene -a start -u <hadoop-user> -p <port> -j <java-dir>
 
 
 Check if Cloudgene is running properly:
 
-    ./state.sh
+    ./cloudgene -a status
 
 
 Cloudgene can be stopped with the following command:
 
-    ./stop.sh
+    ./cloudgene -a stop
 
 
 
 
 ## Configuration
 
-1.  Open your browser and navigate to `http://localhost:8085`.
+1.  Open your browser and navigate to `http://localhost:8082`.
 
-2.  Login as admin with the default admin password (admin1978)
+2.  Login as admin with the default admin password 'admin1978'
 
-3.  Change your password immediately (click on Profile or go to `http://localhost:8082/start.html#!pages/profile`)
+3.  Change your password immediately (click on profile or go to `http://localhost:8082/start.html#!pages/profile`)
 
-4.  Go to Admin-Panel and set the path to your Hadoop Installation. If you installed Hadoop using the ClouderaManager the path of your Hadoop Binary is normally `/usr/bin/hadoop`. You can check this by enter `which hadoop` on the commandline and you get the full path.
+4.  Go to Admin-Panel and set the path to your Hadoop Installation. If you installed Hadoop using the Cloudera Manager the path of your Hadoop Binary is `/usr/bin/hadoop`. You can check this by enter `which hadoop` on the command line to get the full path.
 
     ![enter image description here][1]
 
@@ -76,7 +72,7 @@ Cloudgene can be stopped with the following command:
 
 ## Verifying your Installation
 
-Cloudgene is delivered with a preconfigured application which can be used to test that Cloudgene detects your Hadoop cluster and works properly. To run this test, please follow this steps:
+Cloudgene is delivered with a preconfigured application. This can be used to test that Cloudgene detects your Hadoop cluster and works properly. To run this test, please follow these steps:
 
 1.  Click on Run and the following formular appears:
 
@@ -87,15 +83,6 @@ Cloudgene is delivered with a preconfigured application which can be used to tes
 3.  If the job fails, please read the error message and adapt your configuration until the job runs successfully.
 
 4.  Now you are ready to use Cloudgene!
-
-
-## What's next?
-
-Please have a look at the documentation, for a detailed information including the user guide, a list of supported applications and tutorials on how to integrate and deploy your own applications:
-
-*   Install your first Application
-*   Developer Guide
-
 
 
  [1]: {{ site.baseurl }}/images/hadoop.png
