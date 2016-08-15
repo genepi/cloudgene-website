@@ -3,25 +3,24 @@ layout: page
 title: Cloudgene
 ---
 
-
-Cloudgene is a platform designed for Hadoop MapReduce. It provides a graphical user interface for the complete MapReduce workflow including data transfer, workflow execution and data export. It provides feedback at any point.
-The overall goal of Cloudgene is to build a standardized workflow execution environment for currently available and future MapReduce programs, which can all be integrated into Cloudgene.
-
+Cloudgene is a platform for Hadoop. By connecting your Hadoop applications to Cloudgene, a powerful web application is created within minutes. Cloudgene supports the complete workflow including data transfer, program execution and data export. Feedback is provided at any point to users.
+The overall goal of Cloudgene is to build Software As A Service (SaaS) approaches for currently available and future Hadoop programs.
+ 
 <a class="btn btn-info" href="/cloudgene-website/getting-started">Getting started</a>
 
 * * *
 
 ## Who uses Cloudgene?
 
-Cloudgene lives from its applications. Therefore, we already integrated available MapReduce programs in the field of genomics such as HadoopBam, Seal, Crossbow, Cloudburst or Myrna into Cloudgene. If you’re interested to integrate your program please let us know.
+Cloudgene lives from its applications. Therefore, we already tested available MapReduce programs in the field of Genomics such as HadoopBam, Seal, Crossbow, Cloudburst or Myrna. If you’re interested to integrate your program please let <a href="/cloudgene-website/about">us</a> know.
 
+Two SaaS approaches are already publicly available:
 
 ### Michigan Imputation Server
 
 *In cooperation with the University of Michigan, Gonçalo Abecasis & Christian Fuchsberger*
 
-This server provides a free genotype imputation service. You can upload GWAS genotypes and receive imputed genomes in return. The underlying imputation engine is base on minimac, which implements a low memory, computationally efficient algorithm for genotype imputation that can handle very large reference panels with thousands of haplotypes. The current version of this server uses the 1000 Genomes Project phase III release as a reference for imputation.
-
+This server provides a free genotype imputation service. You can upload GWAS genotypes (VCF or 23andMe format) and receive phased and imputed genomes in return. Our server offers imputation from HapMap, 1000 Genomes (Phase 1 and 3), CAAPA and the updated Haplotype Reference Consortium (HRC version r1.1) panel. 
 [https://imputationserver.sph.umich.edu](https://imputationserver.sph.umich.edu)
 
 
@@ -29,7 +28,6 @@ This server provides a free genotype imputation service. You can upload GWAS gen
 
 *University of Innsbruck*
 
-This server provides a free mtDNA alignment and heteroplasmy detection service. You can upload either single/paired FASTQ or BAM files and receive BAM files (in case of FASTQ input), detected heteroplasmies, interactive reports and haplogroups in return. The current version of this service uses a parallelized version of BWA MEM for alignment and includes different filters (e.g. BAQ, quality filters, statistics methods) to determine heteroplasmies reliable. All steps are executed in parallel using Cloudgene and the Hadoop framework.
-mtDNA-Server
+mtDNA-Server provides a free service for the analysis of human mitochondrial DNA data, currently focusing on reliable identification of heteroplasmy (>= 1%) and contamination. mtDNA-Server can be executed without any user login. We also provide post-processing guidelines that should be applied after each automated analysis.
 
 [http://mtdna-server.uibk.ac.at/](http://mtdna-server.uibk.ac.at/)
