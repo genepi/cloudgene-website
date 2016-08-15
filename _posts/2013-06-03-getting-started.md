@@ -6,7 +6,7 @@ category: doc
 order: 0
 ---
 
-This page helps you to install, configure and running Cloudgene on your own Hadoop cluster.
+This page helps you to install, configure and run Cloudgene on your own Hadoop cluster.
 
 
 ## Requirements
