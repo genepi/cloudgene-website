@@ -3,8 +3,8 @@ layout: page
 title: Cloudgene
 ---
 
-Cloudgene is a platform for Hadoop. By connecting Hadoop applications to Cloudgene, a powerful web application is created within minutes. Cloudgene supports the complete workflow including data transfer, program execution and data export. Feedback is provided at any point to users.
-The overall goal of Cloudgene is to build Software As A Service (SaaS) approaches for currently available and future Hadoop programs.
+Cloudgene is a platform for Hadoop with the overall goal to build Software As A Service (SaaS) approaches for currently available and future Hadoop programs. By connecting Hadoop applications to Cloudgene, a powerful web application can be created within minutes. Cloudgene supports the complete workflow including data transfer, program execution and data export.
+
  
 <a class="btn btn-info" href="/cloudgene-website/getting-started">Getting started</a>
 
