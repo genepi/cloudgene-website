@@ -1,9 +1,0 @@
-name: hello-cloudgene
-version: 1.0
-workflow:
-  steps:
-    - name: Hello
-      exec: /bin/echo Hello Cloudgene!
-
-    - name: Date
-      exec: /bin/date
