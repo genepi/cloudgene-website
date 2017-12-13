@@ -1,11 +1,11 @@
 #!/bin/bash
 
-CLOUDGENE_VERSION=1.26.0
+CLOUDGENE_VERSION=1.27.0
 CLOUDGENE_URL=https://imputationserver.sph.umich.edu/static/downloads
 CLOUDGENE_INSTALLER_URL=${CLOUDGENE_URL}/cloudgene-installer-${CLOUDGENE_VERSION}.sh
 
 # github
-# CLOUDGENE_VERSION=v1.26.0
+# CLOUDGENE_VERSION=v1.27.0
 # CLOUDGENE_URL=https://github.com/lukfor/cloudgene/releases/download
 # CLOUDGENE_INSTALLER_URL=${CLOUDGENE_URL}/${CLOUDGENE_VERSION}/cloudgene-installer.sh
 
