@@ -14,12 +14,12 @@ Cloudgene is a framework to build Software As A Service (SaaS) platforms for dat
 
 ## Key Features
 
-- :wrench: **Build** your analysis pipeline in your favorite language or use Hadoop based technologies (MapReduce, Spark, Pig)
-- :page_facing_up: **Integrate** your analysis pipeline into Cloudgene by writing a simple [configuration file](http://docs.cloudgene.io/developers/introduction/)
-- :bulb: **Get** a powerful web application with user management, data transfer, error handling and more
-- :star: **Deploy** your application with one click to any Hadoop cluster or to public Clouds like Amazon AWS
-- :cloud: **Provide** your application as SaaS to other scientists and handle thousands of jobs like a pro
-- :earth_americas: **Share** your application and enable everyone to clone your service to its own hardware or private cloud instance
+- **Build** your analysis pipeline in your favorite language or use Hadoop based technologies (MapReduce, Spark, Pig)
+- **Integrate** your analysis pipeline into Cloudgene by writing a simple [configuration file](http://docs.cloudgene.io/developers/introduction/)
+- **Get** a powerful web application with user management, data transfer, error handling and more
+- **Deploy** your application with one click to any Hadoop cluster or to public Clouds like Amazon AWS
+- **Provide** your application as SaaS to other scientists and handle thousands of jobs like a pro
+- **Share** your application and enable everyone to clone your service to its own hardware or private cloud instance
 
 * * *
 
