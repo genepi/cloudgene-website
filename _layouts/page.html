@@ -34,7 +34,7 @@
 			<div class="container">
 				<a href="{{ site.baseurl }}/" class="brand"><img src="https://raw.githubusercontent.com/genepi/cloudgene/master/cloudgene.mapred/src/web/images/cloudgene.png" style="height:42px;"></a>
 				<ul class="nav pull-right">
-					<li><a href="{{ site.baseurl }}/download">Download</a></li>
+					<li><a href="http://docs.cloudgene.io" target="_blank">Documentation</a></li>
 					<li><a href="{{ site.baseurl }}/about">About</a></li>
 				</ul>
 			</div>
@@ -42,22 +42,7 @@
 	</div>
 	<div class="container">
 		<div class="row">
-			<div class="span3">
-
-				<div id="sidebar">
-					<ul id="menu" class="nav nav-list">
-						{% for section in site.sections %} {% assign attr = section[0] %} {% assign label = section[1] %} {% for page in site.categories[attr] %} {% if forloop.first %}
-						<li class="nav-header">{{ label }}</li>
-						{% endif %}
-						<li data-order="{{ page.order }}" data-page-url="{{ page.url }}"><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
-						{% endfor %} {% endfor %}
-						<!-- List additional links. It is recommended to add a divider
-              e.g. <li class="divider"></li> first to break up the content. -->
-					</ul>
-				</div>
-
-
-			</div>
+			
 			<div class="span9">
 				<div class="page-header">
 					<h1>{{page.title}}</h1>
