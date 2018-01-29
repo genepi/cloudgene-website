@@ -19,7 +19,7 @@ Cloudgene is a framework to build Software As A Service (SaaS) platforms for dat
 - **Get** a powerful web application with user management, data transfer, error handling and more
 - **Deploy** your application with one click to any Hadoop cluster or to public Clouds like Amazon AWS
 - **Provide** your application as SaaS to other scientists and handle thousands of jobs like a pro
-- **Share** yyour application and enable everyone to clone your service to its own hardware or private cloud instance
+- **Share** your application and enable everyone to clone your service to its own hardware or private cloud instance
 
 * * *
 
