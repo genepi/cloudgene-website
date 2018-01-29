@@ -7,6 +7,11 @@ Cloudgene is a platform for Hadoop with the overall goal to build Software As A 
 
  
 <a class="btn btn-info" href="/cloudgene-website/getting-started">Getting started</a>
+<a class="btn btn-lg btn-success" href="http://docs.cloudgene.io/installation/" target="_blank" role="button"><i class="fa fa-download" aria-hidden="true"></i> Documentation</a>
+<a class="btn btn-lg btn-primary" href="http://docs.cloudgene.io" target="_blank" role="button"><i class="fa fa-book" aria-hidden="true"></i> Documentation</a>
+<a class="btn btn-lg btn-secondary" href="https://github.com/genepi/cloudgene"  target="_blank" role="button"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+
+
 
 * * *
 
