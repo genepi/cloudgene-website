@@ -1,0 +1,29 @@
+#!/bin/bash
+
+CLOUDGENE_VERSION=1.29.0
+CLOUDGENE_URL=https://imputationserver.sph.umich.edu/static/downloads
+CLOUDGENE_INSTALLER_URL=${CLOUDGENE_URL}/cloudgene-installer-${CLOUDGENE_VERSION}.sh
+
+# github
+# CLOUDGENE_VERSION=v1.27.0
+# CLOUDGENE_URL=https://github.com/lukfor/cloudgene/releases/download
+# CLOUDGENE_INSTALLER_URL=${CLOUDGENE_URL}/${CLOUDGENE_VERSION}/cloudgene-installer.sh
+
+echo "Installing Cloudgene ${CLOUDGENE_VERSION}..."
+
+echo "Downloading Cloudgene ${CLOUDGENE_INSTALLER_URL}..."
+curl ${CLOUDGENE_INSTALLER_URL} -o cloudgene-installer.sh
+
+# execute installer
+chmod +x ./cloudgene-installer.sh
+./cloudgene-installer.sh
+
+# change mod for executables
+chmod +x ./cloudgene
+chmod +x ./cloudgene-daemon
+
+# remove installer
+rm ./cloudgene-installer.sh
+
+echo ""
+echo "Cloudgene ${CLOUDGENE_VERSION} installation completed. Have fun!"
