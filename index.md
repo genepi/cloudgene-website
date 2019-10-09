@@ -6,7 +6,7 @@ title: Cloudgene
 Cloudgene is a framework to build Software As A Service (SaaS) platforms for data analysis pipelines. By connecting commandline programs, scripts or Hadoop applications to Cloudgene, a powerful web application can be created within minutes. Cloudgene supports the complete workflow including data transfer, program execution and data export.
 
  
-<a class="btn btn-lg btn-success" href="http://docs.cloudgene.io/installation/" target="_blank" role="button"><i class="fa fa-download" aria-hidden="true"></i> Install</a>
+<a class="btn btn-lg btn-success" href="http://docs.cloudgene.io" target="_blank" role="button"><i class="fa fa-download" aria-hidden="true"></i> Install</a>
 <a class="btn btn-lg btn-primary" href="http://docs.cloudgene.io" target="_blank" role="button"><i class="fa fa-book" aria-hidden="true"></i> Documentation</a>
 <a class="btn btn-lg btn-secondary" href="https://github.com/genepi/cloudgene"  target="_blank" role="button"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
 
